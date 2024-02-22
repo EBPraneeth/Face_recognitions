@@ -1,0 +1,13 @@
+tensorflow
+keras
+matplotlib
+opencv-python
+pandas
+Flask
+Flask-Cors
+dvc
+pyYAML
+python-box
+tqdm
+ensure
+-e .
