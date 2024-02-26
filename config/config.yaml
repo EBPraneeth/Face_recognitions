@@ -2,8 +2,8 @@ artifacts_root: artifacts
 
 data_ingestion: 
   root_dir: artifacts/data_ingestion
-  source_url: https://postechackr-my.sharepoint.com/:u:/g/personal/dongbinna_postech_ac_kr/ES-jbCNC6mNHhCyR4Nl1QpYBlxVOJ5YiVerhDpzmoS9ezA?download=1 -O CelebA_HQ_facial_identity_dataset.zip\r\n
+  source_url: https://drive.usercontent.google.com/download?id=1rNqPXQk5NgAAC88ffRi2-h5Rp5OlBMvq&export=download&authuser=0&confirm=t&uuid=9cbf78ce-a076-44f7-8113-b4feacc768bd&at=APZUnTX2AcR32FdxBKUrg4mZpZgv%3A1708942199030
   zip_data_File: artifacts/data_ingestion/data.zip
-  unzip_dir: artifacts/data_ingestion
+  unzip_dir: artifacts/data_ingestion/dataset
 
   

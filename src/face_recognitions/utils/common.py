@@ -4,7 +4,7 @@ from box.exceptions import BoxValueError
 import yaml
 from face_recognitions import logger
 import json
-import joblib
+# import joblib
 from ensure import ensure_annotations
 from box import ConfigBox
 from pathlib import Path
