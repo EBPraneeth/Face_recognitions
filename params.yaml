@@ -1,1 +1,31 @@
-key: val
+# metrics = ["cosine", "euclidean", "euclidean_l2"]
+# backends = [
+#   'opencv', 
+#   'ssd', 
+#   'dlib', 
+#   'mtcnn', 
+#   'retinaface', 
+#   'mediapipe',
+#   'yolov8',
+#   'yunet',
+#   'fastmtcnn',
+# ]
+# models = [
+#   "VGG-Face", 
+#   "Facenet", 
+#   "Facenet512", 
+#   "OpenFace", 
+#   "DeepFace", 
+#   "DeepID", 
+#   "ArcFace", 
+#   "Dlib", 
+#   "SFace",
+# ]
+MODEL_NAME: Facenet512 
+FACE_DETECTOR_BACKEND: mtcnn 
+TARGET_SIZE: (224, 224)
+ENFORCE_DETECTION: True
+ALIGN: True
+EXPAND_PERCENTAGE: 0
+NORMALIZATION : base
+SILENT : False
