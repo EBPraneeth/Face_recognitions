@@ -33,7 +33,7 @@ class Train_Representation_Model :
                 if file.lower().endswith((".jpg", ".jpeg", ".png")):
                     exact_path = os.path.join(r, file)
                     images.append(exact_path)
-        return images[0:15]
+        return images
 
 
     def find_bulk_embeddings(

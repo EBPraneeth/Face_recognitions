@@ -11,3 +11,9 @@ train_model:
   represent_file: artifacts/model/representation.pkl
   train_faces_dir: artifacts/data_ingestion/dataset/train
 
+evaluation:
+  test_dir: artifacts/test
+  test_faces_dir: artifacts/data_ingestion/dataset/test
+  
+
+

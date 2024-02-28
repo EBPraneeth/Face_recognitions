@@ -8,7 +8,7 @@ import json
 from ensure import ensure_annotations
 from box import ConfigBox
 from pathlib import Path
-from typing import Any
+from typing import Any, List
 import base64
 
 
@@ -136,3 +136,21 @@ def decodeImage(imgstring, fileName):
 def encodeImageIntoBase64(croppedImagePath):
     with open(croppedImagePath, "rb") as f:
         return base64.b64encode(f.read())
+    
+@ensure_annotations    
+def list_of_image_path(path:Path)->List[Path]:
+
+    """
+    List images in a given path
+    Args:
+        path (str): path's location
+    Returns:
+        images (list): list of exact image paths
+    """
+    images = []
+    for r, _, f in os.walk(path):
+        for file in f:
+            if file.lower().endswith((".jpg", ".jpeg", ".png")):
+                exact_path = os.path.join(r, file)
+                images.append(exact_path)
+    return images
